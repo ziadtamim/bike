@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		875347F856E06B2FCD134596 /* Pods_CobiBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076A0CC6CE6118BC31DC5A63 /* Pods_CobiBike.framework */; };
+		AC4AC8F1A0193E686FD901B6 /* Pods_CobiBikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD50167AC352400391821AB /* Pods_CobiBikeTests.framework */; };
+		E70A5ACE2184F9DB005C119E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70A5ACD2184F9DB005C119E /* MapKit.framework */; };
+		E70A5AD02185020B005C119E /* BikeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70A5ACF2185020B005C119E /* BikeAnnotation.swift */; };
+		E71148B421825D6000C409D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148B321825D6000C409D7 /* AppDelegate.swift */; };
+		E71148BB21825D6200C409D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71148BA21825D6200C409D7 /* Assets.xcassets */; };
+		E71148BE21825D6200C409D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71148BC21825D6200C409D7 /* LaunchScreen.storyboard */; };
+		E71148DA21825E4E00C409D7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148D521825E4E00C409D7 /* HTTPClient.swift */; };
+		E71148DB21825E4E00C409D7 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148D621825E4E00C409D7 /* HTTPError.swift */; };
+		E71148DC21825E4E00C409D7 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148D721825E4E00C409D7 /* HTTPRequest.swift */; };
+		E71148DD21825E4E00C409D7 /* HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148D821825E4E00C409D7 /* HTTPResponseHandler.swift */; };
+		E71148DE21825E4E00C409D7 /* SessionManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148D921825E4E00C409D7 /* SessionManagerContract.swift */; };
+		E71148E321825EFD00C409D7 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148E221825EFD00C409D7 /* Bike.swift */; };
+		E71148E6218260C100C409D7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148E5218260C100C409D7 /* Router.swift */; };
+		E71148EC2182633F00C409D7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148EB2182633F00C409D7 /* Config.swift */; };
+		E71148EE2182812E00C409D7 /* AskPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148ED2182812E00C409D7 /* AskPermissionViewController.swift */; };
+		E71148F02182815300C409D7 /* BikeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148EF2182815300C409D7 /* BikeListViewController.swift */; };
+		E71148F22182816900C409D7 /* NewBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148F12182816900C409D7 /* NewBikeViewController.swift */; };
+		E71148F42182818600C409D7 /* NewBikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148F32182818600C409D7 /* NewBikePresenter.swift */; };
+		E71148F62182819A00C409D7 /* BikeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148F52182819A00C409D7 /* BikeListPresenter.swift */; };
+		E71148F8218281A600C409D7 /* AskPermissionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148F7218281A600C409D7 /* AskPermissionPresenter.swift */; };
+		E71148FA2183208600C409D7 /* BikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148F92183208600C409D7 /* BikeService.swift */; };
+		E71148FD218332C100C409D7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71148FC218332C100C409D7 /* LocationService.swift */; };
+		E711490121838D2C00C409D7 /* AskPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711490021838D2C00C409D7 /* AskPermissionView.swift */; };
+		E71149042183C97E00C409D7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71149032183C97E00C409D7 /* Style.swift */; };
+		E71149062183C9D000C409D7 /* UIKit+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71149052183C9D000C409D7 /* UIKit+Helpers.swift */; };
+		E711490C218480BF00C409D7 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711490B218480BF00C409D7 /* AlertPresenter.swift */; };
+		E771DAD021879A11000CFFCE /* BikeReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DACF21879A11000CFFCE /* BikeReturnViewController.swift */; };
+		E771DAD221879A35000CFFCE /* BikeReturnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAD121879A35000CFFCE /* BikeReturnView.swift */; };
+		E771DAD72187C129000CFFCE /* NameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAD62187C129000CFFCE /* NameViewCell.swift */; };
+		E771DAD92187C150000CFFCE /* PinViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAD82187C150000CFFCE /* PinViewCell.swift */; };
+		E771DADB2187C195000CFFCE /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DADA2187C195000CFFCE /* ColorViewCell.swift */; };
+		E771DADF2187C567000CFFCE /* BikeReturnPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DADE2187C567000CFFCE /* BikeReturnPresenter.swift */; };
+		E771DAE12188607F000CFFCE /* UICollectionView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAE02188607F000CFFCE /* UICollectionView+Helpers.swift */; };
+		E771DAE421886D93000CFFCE /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAE321886D93000CFFCE /* Key.swift */; };
+		E771DAE621886DFA000CFFCE /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAE521886DFA000CFFCE /* UserDefaults+Helpers.swift */; };
+		E771DAE821887B97000CFFCE /* BikeRentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAE721887B97000CFFCE /* BikeRentView.swift */; };
+		E771DAEC21888835000CFFCE /* BikeRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAEB21888835000CFFCE /* BikeRentViewController.swift */; };
+		E771DAEE21888959000CFFCE /* BikeRentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAED21888959000CFFCE /* BikeRentPresenter.swift */; };
+		E771DAF02188B99A000CFFCE /* NewBikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAEF2188B99A000CFFCE /* NewBikeView.swift */; };
+		E771DAF62189E3C2000CFFCE /* FakeAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAF42189E3AD000CFFCE /* FakeAlertPresenter.swift */; };
+		E771DAF82189E3E8000CFFCE /* AlertPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAF72189E3E8000CFFCE /* AlertPresenterTests.swift */; };
+		E771DAFB2189E426000CFFCE /* PartiallyFakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DAF92189E416000CFFCE /* PartiallyFakeViewController.swift */; };
+		E771DB032189E685000CFFCE /* BikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DB022189E685000CFFCE /* BikeTests.swift */; };
+		E771DB052189E6A7000CFFCE /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DB042189E6A7000CFFCE /* Fixtures.swift */; };
+		E771DB132189EAA3000CFFCE /* valid-bike-list-response.json in Resources */ = {isa = PBXBuildFile; fileRef = E771DAFE2189E5D5000CFFCE /* valid-bike-list-response.json */; };
+		E771DB142189EAA3000CFFCE /* invalid-bike-list-response.json in Resources */ = {isa = PBXBuildFile; fileRef = E771DB002189E60D000CFFCE /* invalid-bike-list-response.json */; };
+		E771DB152189EAA3000CFFCE /* valid-bike.json in Resources */ = {isa = PBXBuildFile; fileRef = E771DB062189E80F000CFFCE /* valid-bike.json */; };
+		E771DB162189EAA3000CFFCE /* invalid-bike-missing-key.json in Resources */ = {isa = PBXBuildFile; fileRef = E771DB082189E8BE000CFFCE /* invalid-bike-missing-key.json */; };
+		E771DB182189EAD3000CFFCE /* BikeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DB172189EAD3000CFFCE /* BikeServiceTests.swift */; };
+		E771DB1A2189EB0B000CFFCE /* FakeHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DB192189EB0B000CFFCE /* FakeHTTPClient.swift */; };
+		E771DB1C2189F00F000CFFCE /* Result+CobiBike.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771DB1B2189F00F000CFFCE /* Result+CobiBike.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E71148C521825D6200C409D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E71148A821825D6000C409D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E71148AF21825D6000C409D7;
+			remoteInfo = CobiBike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		076A0CC6CE6118BC31DC5A63 /* Pods_CobiBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobiBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFE89CAF2758048ECD26027 /* Pods-CobiBikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobiBikeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CobiBikeTests/Pods-CobiBikeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCD50167AC352400391821AB /* Pods_CobiBikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobiBikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8E4D4348016CF19416A92C /* Pods-CobiBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobiBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-CobiBike/Pods-CobiBike.release.xcconfig"; sourceTree = "<group>"; };
+		C13EE88A491042355B250D6B /* Pods-CobiBikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobiBikeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CobiBikeTests/Pods-CobiBikeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB38DB155EE01E810D66F982 /* Pods-CobiBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobiBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CobiBike/Pods-CobiBike.debug.xcconfig"; sourceTree = "<group>"; };
+		E70A5ACD2184F9DB005C119E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E70A5ACF2185020B005C119E /* BikeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAnnotation.swift; sourceTree = "<group>"; };
+		E71148B021825D6000C409D7 /* CobiBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobiBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71148B321825D6000C409D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E71148BA21825D6200C409D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E71148BD21825D6200C409D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E71148BF21825D6200C409D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71148C421825D6200C409D7 /* CobiBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CobiBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71148CA21825D6200C409D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71148D521825E4E00C409D7 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		E71148D621825E4E00C409D7 /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		E71148D721825E4E00C409D7 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		E71148D821825E4E00C409D7 /* HTTPResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseHandler.swift; sourceTree = "<group>"; };
+		E71148D921825E4E00C409D7 /* SessionManagerContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManagerContract.swift; sourceTree = "<group>"; };
+		E71148E221825EFD00C409D7 /* Bike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
+		E71148E5218260C100C409D7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E71148EB2182633F00C409D7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E71148ED2182812E00C409D7 /* AskPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskPermissionViewController.swift; sourceTree = "<group>"; };
+		E71148EF2182815300C409D7 /* BikeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeListViewController.swift; sourceTree = "<group>"; };
+		E71148F12182816900C409D7 /* NewBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBikeViewController.swift; sourceTree = "<group>"; };
+		E71148F32182818600C409D7 /* NewBikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBikePresenter.swift; sourceTree = "<group>"; };
+		E71148F52182819A00C409D7 /* BikeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeListPresenter.swift; sourceTree = "<group>"; };
+		E71148F7218281A600C409D7 /* AskPermissionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskPermissionPresenter.swift; sourceTree = "<group>"; };
+		E71148F92183208600C409D7 /* BikeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeService.swift; sourceTree = "<group>"; };
+		E71148FC218332C100C409D7 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E711490021838D2C00C409D7 /* AskPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskPermissionView.swift; sourceTree = "<group>"; };
+		E71149032183C97E00C409D7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		E71149052183C9D000C409D7 /* UIKit+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Helpers.swift"; sourceTree = "<group>"; };
+		E711490B218480BF00C409D7 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		E711490D2184894800C409D7 /* cobi-bike-office.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "cobi-bike-office.gpx"; sourceTree = "<group>"; };
+		E771DACF21879A11000CFFCE /* BikeReturnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeReturnViewController.swift; sourceTree = "<group>"; };
+		E771DAD121879A35000CFFCE /* BikeReturnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeReturnView.swift; sourceTree = "<group>"; };
+		E771DAD62187C129000CFFCE /* NameViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewCell.swift; sourceTree = "<group>"; };
+		E771DAD82187C150000CFFCE /* PinViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewCell.swift; sourceTree = "<group>"; };
+		E771DADA2187C195000CFFCE /* ColorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewCell.swift; sourceTree = "<group>"; };
+		E771DADE2187C567000CFFCE /* BikeReturnPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeReturnPresenter.swift; sourceTree = "<group>"; };
+		E771DAE02188607F000CFFCE /* UICollectionView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helpers.swift"; sourceTree = "<group>"; };
+		E771DAE321886D93000CFFCE /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		E771DAE521886DFA000CFFCE /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
+		E771DAE721887B97000CFFCE /* BikeRentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeRentView.swift; sourceTree = "<group>"; };
+		E771DAEB21888835000CFFCE /* BikeRentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRentViewController.swift; sourceTree = "<group>"; };
+		E771DAED21888959000CFFCE /* BikeRentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRentPresenter.swift; sourceTree = "<group>"; };
+		E771DAEF2188B99A000CFFCE /* NewBikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBikeView.swift; sourceTree = "<group>"; };
+		E771DAF42189E3AD000CFFCE /* FakeAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAlertPresenter.swift; sourceTree = "<group>"; };
+		E771DAF72189E3E8000CFFCE /* AlertPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterTests.swift; sourceTree = "<group>"; };
+		E771DAF92189E416000CFFCE /* PartiallyFakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiallyFakeViewController.swift; sourceTree = "<group>"; };
+		E771DAFE2189E5D5000CFFCE /* valid-bike-list-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "valid-bike-list-response.json"; sourceTree = "<group>"; };
+		E771DB002189E60D000CFFCE /* invalid-bike-list-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "invalid-bike-list-response.json"; sourceTree = "<group>"; };
+		E771DB022189E685000CFFCE /* BikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTests.swift; sourceTree = "<group>"; };
+		E771DB042189E6A7000CFFCE /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		E771DB062189E80F000CFFCE /* valid-bike.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "valid-bike.json"; sourceTree = "<group>"; };
+		E771DB082189E8BE000CFFCE /* invalid-bike-missing-key.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "invalid-bike-missing-key.json"; sourceTree = "<group>"; };
+		E771DB172189EAD3000CFFCE /* BikeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeServiceTests.swift; sourceTree = "<group>"; };
+		E771DB192189EB0B000CFFCE /* FakeHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHTTPClient.swift; sourceTree = "<group>"; };
+		E771DB1B2189F00F000CFFCE /* Result+CobiBike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+CobiBike.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E71148AD21825D6000C409D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70A5ACE2184F9DB005C119E /* MapKit.framework in Frameworks */,
+				875347F856E06B2FCD134596 /* Pods_CobiBike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71148C121825D6200C409D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4AC8F1A0193E686FD901B6 /* Pods_CobiBikeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38A49F3654A13835C2D381CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB38DB155EE01E810D66F982 /* Pods-CobiBike.debug.xcconfig */,
+				BE8E4D4348016CF19416A92C /* Pods-CobiBike.release.xcconfig */,
+				C13EE88A491042355B250D6B /* Pods-CobiBikeTests.debug.xcconfig */,
+				5FFE89CAF2758048ECD26027 /* Pods-CobiBikeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5529412D8F834DADF00133FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E70A5ACD2184F9DB005C119E /* MapKit.framework */,
+				076A0CC6CE6118BC31DC5A63 /* Pods_CobiBike.framework */,
+				BCD50167AC352400391821AB /* Pods_CobiBikeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E71148A721825D6000C409D7 = {
+			isa = PBXGroup;
+			children = (
+				E711490D2184894800C409D7 /* cobi-bike-office.gpx */,
+				E71148B221825D6000C409D7 /* CobiBike */,
+				E771DAF22189E385000CFFCE /* Test Fakes */,
+				E771DAF32189E399000CFFCE /* Fixtures */,
+				E71148C721825D6200C409D7 /* CobiBikeTests */,
+				E71148B121825D6000C409D7 /* Products */,
+				38A49F3654A13835C2D381CC /* Pods */,
+				5529412D8F834DADF00133FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E71148B121825D6000C409D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E71148B021825D6000C409D7 /* CobiBike.app */,
+				E71148C421825D6200C409D7 /* CobiBikeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E71148B221825D6000C409D7 /* CobiBike */ = {
+			isa = PBXGroup;
+			children = (
+				E71148B321825D6000C409D7 /* AppDelegate.swift */,
+				E71148D321825E3C00C409D7 /* API */,
+				E71148E121825EF100C409D7 /* Models */,
+				E71149022183C96D00C409D7 /* UI */,
+				E71148FB21832A6A00C409D7 /* Extension  */,
+				E71148EA2182633200C409D7 /* Constants */,
+				E71148E4218260AE00C409D7 /* Module */,
+				E71148BA21825D6200C409D7 /* Assets.xcassets */,
+				E71148BC21825D6200C409D7 /* LaunchScreen.storyboard */,
+				E71148BF21825D6200C409D7 /* Info.plist */,
+			);
+			path = CobiBike;
+			sourceTree = "<group>";
+		};
+		E71148C721825D6200C409D7 /* CobiBikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E71148CA21825D6200C409D7 /* Info.plist */,
+				E771DAF72189E3E8000CFFCE /* AlertPresenterTests.swift */,
+				E771DB022189E685000CFFCE /* BikeTests.swift */,
+				E771DB172189EAD3000CFFCE /* BikeServiceTests.swift */,
+			);
+			path = CobiBikeTests;
+			sourceTree = "<group>";
+		};
+		E71148D321825E3C00C409D7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E71148F92183208600C409D7 /* BikeService.swift */,
+				E71148FC218332C100C409D7 /* LocationService.swift */,
+				E71148D421825E4E00C409D7 /* HTTP */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E71148D421825E4E00C409D7 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				E71148D521825E4E00C409D7 /* HTTPClient.swift */,
+				E71148D621825E4E00C409D7 /* HTTPError.swift */,
+				E71148D721825E4E00C409D7 /* HTTPRequest.swift */,
+				E71148D821825E4E00C409D7 /* HTTPResponseHandler.swift */,
+				E71148D921825E4E00C409D7 /* SessionManagerContract.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		E71148E121825EF100C409D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E71148E221825EFD00C409D7 /* Bike.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E71148E4218260AE00C409D7 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E71148E5218260C100C409D7 /* Router.swift */,
+				E71148E7218261CB00C409D7 /* AskPermission */,
+				E71148E8218261D400C409D7 /* BikeList */,
+				E771DAEA21888815000CFFCE /* BikeRent */,
+				E771DACE218799D0000CFFCE /* BikeReturn */,
+				E71148E9218261E800C409D7 /* NewBike */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E71148E7218261CB00C409D7 /* AskPermission */ = {
+			isa = PBXGroup;
+			children = (
+				E71148ED2182812E00C409D7 /* AskPermissionViewController.swift */,
+				E71148F7218281A600C409D7 /* AskPermissionPresenter.swift */,
+				E711490021838D2C00C409D7 /* AskPermissionView.swift */,
+			);
+			path = AskPermission;
+			sourceTree = "<group>";
+		};
+		E71148E8218261D400C409D7 /* BikeList */ = {
+			isa = PBXGroup;
+			children = (
+				E71148EF2182815300C409D7 /* BikeListViewController.swift */,
+				E70A5ACF2185020B005C119E /* BikeAnnotation.swift */,
+				E71148F52182819A00C409D7 /* BikeListPresenter.swift */,
+			);
+			path = BikeList;
+			sourceTree = "<group>";
+		};
+		E71148E9218261E800C409D7 /* NewBike */ = {
+			isa = PBXGroup;
+			children = (
+				E771DAD52187C0FE000CFFCE /* Cells */,
+				E71148F12182816900C409D7 /* NewBikeViewController.swift */,
+				E71148F32182818600C409D7 /* NewBikePresenter.swift */,
+				E771DAEF2188B99A000CFFCE /* NewBikeView.swift */,
+			);
+			path = NewBike;
+			sourceTree = "<group>";
+		};
+		E71148EA2182633200C409D7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E71148EB2182633F00C409D7 /* Config.swift */,
+				E771DAE321886D93000CFFCE /* Key.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E71148FB21832A6A00C409D7 /* Extension  */ = {
+			isa = PBXGroup;
+			children = (
+				E71149052183C9D000C409D7 /* UIKit+Helpers.swift */,
+				E771DAE02188607F000CFFCE /* UICollectionView+Helpers.swift */,
+				E771DAE521886DFA000CFFCE /* UserDefaults+Helpers.swift */,
+				E771DB1B2189F00F000CFFCE /* Result+CobiBike.swift */,
+			);
+			path = "Extension ";
+			sourceTree = "<group>";
+		};
+		E71149022183C96D00C409D7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E71149032183C97E00C409D7 /* Style.swift */,
+				E711490B218480BF00C409D7 /* AlertPresenter.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E771DACE218799D0000CFFCE /* BikeReturn */ = {
+			isa = PBXGroup;
+			children = (
+				E771DACF21879A11000CFFCE /* BikeReturnViewController.swift */,
+				E771DAD121879A35000CFFCE /* BikeReturnView.swift */,
+				E771DADE2187C567000CFFCE /* BikeReturnPresenter.swift */,
+			);
+			path = BikeReturn;
+			sourceTree = "<group>";
+		};
+		E771DAD52187C0FE000CFFCE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E771DAD62187C129000CFFCE /* NameViewCell.swift */,
+				E771DAD82187C150000CFFCE /* PinViewCell.swift */,
+				E771DADA2187C195000CFFCE /* ColorViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E771DAEA21888815000CFFCE /* BikeRent */ = {
+			isa = PBXGroup;
+			children = (
+				E771DAEB21888835000CFFCE /* BikeRentViewController.swift */,
+				E771DAED21888959000CFFCE /* BikeRentPresenter.swift */,
+				E771DAE721887B97000CFFCE /* BikeRentView.swift */,
+			);
+			path = BikeRent;
+			sourceTree = "<group>";
+		};
+		E771DAF22189E385000CFFCE /* Test Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				E771DAF42189E3AD000CFFCE /* FakeAlertPresenter.swift */,
+				E771DAF92189E416000CFFCE /* PartiallyFakeViewController.swift */,
+				E771DB192189EB0B000CFFCE /* FakeHTTPClient.swift */,
+			);
+			path = "Test Fakes";
+			sourceTree = "<group>";
+		};
+		E771DAF32189E399000CFFCE /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				E771DAFE2189E5D5000CFFCE /* valid-bike-list-response.json */,
+				E771DB002189E60D000CFFCE /* invalid-bike-list-response.json */,
+				E771DB062189E80F000CFFCE /* valid-bike.json */,
+				E771DB082189E8BE000CFFCE /* invalid-bike-missing-key.json */,
+				E771DB042189E6A7000CFFCE /* Fixtures.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E71148AF21825D6000C409D7 /* CobiBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71148CD21825D6200C409D7 /* Build configuration list for PBXNativeTarget "CobiBike" */;
+			buildPhases = (
+				19BC82D0CF69E6FFD72F23E8 /* [CP] Check Pods Manifest.lock */,
+				E71148AC21825D6000C409D7 /* Sources */,
+				E71148AD21825D6000C409D7 /* Frameworks */,
+				E71148AE21825D6000C409D7 /* Resources */,
+				565EB28D0C31493D29C80C57 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CobiBike;
+			productName = CobiBike;
+			productReference = E71148B021825D6000C409D7 /* CobiBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E71148C321825D6200C409D7 /* CobiBikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71148D021825D6200C409D7 /* Build configuration list for PBXNativeTarget "CobiBikeTests" */;
+			buildPhases = (
+				CD426EFF45D68A7E756C4BF0 /* [CP] Check Pods Manifest.lock */,
+				E71148C021825D6200C409D7 /* Sources */,
+				E71148C121825D6200C409D7 /* Frameworks */,
+				E71148C221825D6200C409D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E71148C621825D6200C409D7 /* PBXTargetDependency */,
+			);
+			name = CobiBikeTests;
+			productName = CobiBikeTests;
+			productReference = E71148C421825D6200C409D7 /* CobiBikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E71148A821825D6000C409D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = ByZiad;
+				TargetAttributes = {
+					E71148AF21825D6000C409D7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E71148C321825D6200C409D7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E71148AF21825D6000C409D7;
+					};
+				};
+			};
+			buildConfigurationList = E71148AB21825D6000C409D7 /* Build configuration list for PBXProject "CobiBike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E71148A721825D6000C409D7;
+			productRefGroup = E71148B121825D6000C409D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E71148AF21825D6000C409D7 /* CobiBike */,
+				E71148C321825D6200C409D7 /* CobiBikeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E71148AE21825D6000C409D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71148BE21825D6200C409D7 /* LaunchScreen.storyboard in Resources */,
+				E71148BB21825D6200C409D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71148C221825D6200C409D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E771DB152189EAA3000CFFCE /* valid-bike.json in Resources */,
+				E771DB162189EAA3000CFFCE /* invalid-bike-missing-key.json in Resources */,
+				E771DB132189EAA3000CFFCE /* valid-bike-list-response.json in Resources */,
+				E771DB142189EAA3000CFFCE /* invalid-bike-list-response.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19BC82D0CF69E6FFD72F23E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CobiBike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		565EB28D0C31493D29C80C57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CobiBike/Pods-CobiBike-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CobiBike/Pods-CobiBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD426EFF45D68A7E756C4BF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CobiBikeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E71148AC21825D6000C409D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71148DE21825E4E00C409D7 /* SessionManagerContract.swift in Sources */,
+				E71149062183C9D000C409D7 /* UIKit+Helpers.swift in Sources */,
+				E71148E6218260C100C409D7 /* Router.swift in Sources */,
+				E71148F02182815300C409D7 /* BikeListViewController.swift in Sources */,
+				E71148F42182818600C409D7 /* NewBikePresenter.swift in Sources */,
+				E71148F8218281A600C409D7 /* AskPermissionPresenter.swift in Sources */,
+				E771DAD221879A35000CFFCE /* BikeReturnView.swift in Sources */,
+				E71148F62182819A00C409D7 /* BikeListPresenter.swift in Sources */,
+				E71148DB21825E4E00C409D7 /* HTTPError.swift in Sources */,
+				E71148EC2182633F00C409D7 /* Config.swift in Sources */,
+				E71148F22182816900C409D7 /* NewBikeViewController.swift in Sources */,
+				E771DAF02188B99A000CFFCE /* NewBikeView.swift in Sources */,
+				E71148EE2182812E00C409D7 /* AskPermissionViewController.swift in Sources */,
+				E771DAE421886D93000CFFCE /* Key.swift in Sources */,
+				E711490121838D2C00C409D7 /* AskPermissionView.swift in Sources */,
+				E771DAD92187C150000CFFCE /* PinViewCell.swift in Sources */,
+				E70A5AD02185020B005C119E /* BikeAnnotation.swift in Sources */,
+				E71148FA2183208600C409D7 /* BikeService.swift in Sources */,
+				E771DAD72187C129000CFFCE /* NameViewCell.swift in Sources */,
+				E771DB1C2189F00F000CFFCE /* Result+CobiBike.swift in Sources */,
+				E711490C218480BF00C409D7 /* AlertPresenter.swift in Sources */,
+				E771DAE821887B97000CFFCE /* BikeRentView.swift in Sources */,
+				E771DAD021879A11000CFFCE /* BikeReturnViewController.swift in Sources */,
+				E771DADB2187C195000CFFCE /* ColorViewCell.swift in Sources */,
+				E771DADF2187C567000CFFCE /* BikeReturnPresenter.swift in Sources */,
+				E71148DC21825E4E00C409D7 /* HTTPRequest.swift in Sources */,
+				E71148E321825EFD00C409D7 /* Bike.swift in Sources */,
+				E71148B421825D6000C409D7 /* AppDelegate.swift in Sources */,
+				E771DAE621886DFA000CFFCE /* UserDefaults+Helpers.swift in Sources */,
+				E71148DA21825E4E00C409D7 /* HTTPClient.swift in Sources */,
+				E771DAE12188607F000CFFCE /* UICollectionView+Helpers.swift in Sources */,
+				E71148FD218332C100C409D7 /* LocationService.swift in Sources */,
+				E771DAEE21888959000CFFCE /* BikeRentPresenter.swift in Sources */,
+				E71148DD21825E4E00C409D7 /* HTTPResponseHandler.swift in Sources */,
+				E771DAEC21888835000CFFCE /* BikeRentViewController.swift in Sources */,
+				E71149042183C97E00C409D7 /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71148C021825D6200C409D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E771DB182189EAD3000CFFCE /* BikeServiceTests.swift in Sources */,
+				E771DB032189E685000CFFCE /* BikeTests.swift in Sources */,
+				E771DAFB2189E426000CFFCE /* PartiallyFakeViewController.swift in Sources */,
+				E771DAF62189E3C2000CFFCE /* FakeAlertPresenter.swift in Sources */,
+				E771DB1A2189EB0B000CFFCE /* FakeHTTPClient.swift in Sources */,
+				E771DB052189E6A7000CFFCE /* Fixtures.swift in Sources */,
+				E771DAF82189E3E8000CFFCE /* AlertPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E71148C621825D6200C409D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E71148AF21825D6000C409D7 /* CobiBike */;
+			targetProxy = E71148C521825D6200C409D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E71148BC21825D6200C409D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E71148BD21825D6200C409D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E71148CB21825D6200C409D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E71148CC21825D6200C409D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E71148CE21825D6200C409D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB38DB155EE01E810D66F982 /* Pods-CobiBike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHTKJ9UWEU;
+				INFOPLIST_FILE = CobiBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.byziad.CobiBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E71148CF21825D6200C409D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE8E4D4348016CF19416A92C /* Pods-CobiBike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHTKJ9UWEU;
+				INFOPLIST_FILE = CobiBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.byziad.CobiBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E71148D121825D6200C409D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13EE88A491042355B250D6B /* Pods-CobiBikeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHTKJ9UWEU;
+				INFOPLIST_FILE = CobiBikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.byziad.CobiBikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CobiBike.app/CobiBike";
+			};
+			name = Debug;
+		};
+		E71148D221825D6200C409D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFE89CAF2758048ECD26027 /* Pods-CobiBikeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHTKJ9UWEU;
+				INFOPLIST_FILE = CobiBikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.byziad.CobiBikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CobiBike.app/CobiBike";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E71148AB21825D6000C409D7 /* Build configuration list for PBXProject "CobiBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71148CB21825D6200C409D7 /* Debug */,
+				E71148CC21825D6200C409D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71148CD21825D6200C409D7 /* Build configuration list for PBXNativeTarget "CobiBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71148CE21825D6200C409D7 /* Debug */,
+				E71148CF21825D6200C409D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71148D021825D6200C409D7 /* Build configuration list for PBXNativeTarget "CobiBikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71148D121825D6200C409D7 /* Debug */,
+				E71148D221825D6200C409D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E71148A821825D6000C409D7 /* Project object */;
+}

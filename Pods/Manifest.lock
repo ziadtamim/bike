@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Hue (3.0.1)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Hue (~> 3.0)
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Hue
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: 3c0d311f9face3bd77b2cc58190d045da9e8fab8
+
+COCOAPODS: 1.5.3

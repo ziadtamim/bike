@@ -1,0 +1,6 @@
+framework module Pods_CobiBikeTests {
+  umbrella header "Pods-CobiBikeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
